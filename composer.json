@@ -1,21 +1,26 @@
 {
-    "name": "masterkkm/masterkkm-model",
-    "description": "Не большое изменение в работе генераторе создающем модели по базе данных.",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension","model"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "MasterKKM",
-            "email": "kar-gi-kar@mail.ru"
-        }
-    ],
-    "require": {
-        "yiisoft/yii2": "~2.0.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "masterkkm\\": "./"
-        }
+  "name": "masterkkm/masterkkm-model",
+  "description": "Не большое изменение в работе генераторе создающем модели по базе данных.",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "model"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MasterKKM",
+      "email": "kar-gi-kar@mail.ru"
     }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "masterkkm\\": "./",
+      "masterkkm\\generator\\": "generator"
+    }
+  }
 }
