@@ -4,7 +4,7 @@
  */
 
 /* @var $this yii\web\View */
-/* @var $generator yii\gii\generators\model\Generator */
+/* @var $generator masterkkm\generator\Generator */
 /* @var $tableName string full table name */
 /* @var $className string class name */
 /* @var $queryClassName string query class name */
@@ -14,12 +14,17 @@
 /* @var $rules string[] list of validation rules */
 /* @var $relations array list of relations (name => relation declaration) */
 
+unset($usesTable[$className]);
+
 echo "<?php\n";
 ?>
 
 namespace <?= $generator->ns ?>;
 
 use Yii;
+<?php foreach ($usesTable as $foolClassName) : ?>
+use <?=$foolClassName ?>;
+<?php endforeach; ?>
 
 /**
  * This is the model class for table "<?= $generator->generateTableName($tableName) ?>".
