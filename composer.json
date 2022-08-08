@@ -1,11 +1,12 @@
 {
-  "name": "masterkkm/masterkkm-model",
+  "name": "masterkkm/model_generator",
   "description": "Не большое изменение в работе генераторе создающем модели по базе данных.",
   "type": "yii2-extension",
   "keywords": [
     "yii2",
     "extension",
-    "model"
+    "model",
+    "generation"
   ],
   "license": "MIT",
   "authors": [
