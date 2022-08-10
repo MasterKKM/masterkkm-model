@@ -60,18 +60,6 @@ class Generator extends \yii\gii\generators\model\Generator
     }
 
     /**
-     * Generates a class name from the specified table name.
-     * Добавлено приведение имени таблицы к строчным символам.
-     * @param string $tableName the table name (which may contain schema prefix)
-     * @param bool $useSchemaName should schema name be included in the class name, if present
-     * @return string the generated class name
-     */
-    protected function generateClassName($tableName, $useSchemaName = null)
-    {
-        return parent::generateClassName(mb_strtolower($tableName), $useSchemaName);
-    }
-
-    /**
      * @inheritdoc
      */
     public function __construct($config = [])
