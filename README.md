@@ -21,19 +21,31 @@ Installation
 
 Предпочтительный способ установки этого расширения - через [composer](http://getcomposer.org/download/).
 
-Для этого запустите:
+Для этого подключите репозиторий в разделе `repositories` файла `composer.json` следующим образом:
 
-```
-composer require --dev masterkkm/model_generator "*"
-```
+    *  *  *
+    "repositories": [
+      *  *  *
+        {
+            "type": "github",
+            "url": "https://github.com/MasterKKM/masterkkm-model.git"
+        }
+    ]
+    *  *  *
+
+После чего можно использовать команду композера:
+
+    composer require --dev --prefer-dist masterkkm/yii2-model_generator "*"
 
 Или добавть
 
-```
-"masterkkm/model_generator": "*"
-```
+    "masterkkm/yii2-model_generator": "*"
 
-в `require-dev` секцию Вашего файла `composer.json`. Кроме этого, нужно подключить генерато в файле конфигурацции
+в `require-dev` секцию Вашего файла `composer.json`. После чего вызвать
+
+    composer install
+
+После установки, нужно подключить генератор в файле конфигурацции
 (Для базового шаблона это `config/web.php` для расширеного, смотрите сами по аналогии). Следующим образом:
 
     $config['modules']['gii'] = [
